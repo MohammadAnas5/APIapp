@@ -27,5 +27,3 @@ def index():
     # Render the template with DataFrame passed to it
     return render_template('home.html', tables=[df.to_html(classes='data', header="true")])
 
-if __name__ == "__main__":
-    app.run(debug=True)
