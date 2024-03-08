@@ -9,7 +9,7 @@ def index():
     # Initialize an empty DataFrame
     df = pd.DataFrame()
 
-    for i in range(1, 462):
+    for i in range(1, 2):
         try:
             response = requests.get(f"https://api.themoviedb.org/3/movie/top_rated?api_key=d6d6db9828ca83b2e849b84cf888f842&language=en-US&page={i}")
             response.raise_for_status()  # Check for any HTTP errors
