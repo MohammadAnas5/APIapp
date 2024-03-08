@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Data</title>
+    <title>Movies Data</title>
     <style>
         table.data {
             border-collapse: collapse;
@@ -21,9 +21,11 @@
     </style>
 </head>
 <body>
-    <h1>Product Data</h1>
+    <h1>Data Fetched from movies API</h1>
     {% for table in tables %}
-        {{ table|safe }}
+        <table class="data">
+            {{ table|safe }}
+        </table>
     {% endfor %}
 </body>
 </html>
